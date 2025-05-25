@@ -1,6 +1,4 @@
-/* Base Styles */
 :root {
-    /* Light Theme Variables */
     --primary-color: #5e72e4;
     --secondary-color: #11cdef;
     --background-color: #f8f9fa;
@@ -11,23 +9,19 @@
     --error-color: #e53e3e;
     --success-color: #48bb78;
     
-    /* Transitions */
     --transition-speed: 0.3s;
     
-    /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 5rem;
     
-    /* Border radius */
     --border-radius-sm: 0.25rem;
     --border-radius-md: 0.5rem;
     --border-radius-lg: 1rem;
     --border-radius-full: 9999px;
     
-    /* Font sizes */
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-md: 1rem;
@@ -37,14 +31,12 @@
     --font-size-3xl: 1.875rem;
     --font-size-4xl: 2.25rem;
     
-    /* Font weights */
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     
-    /* Container widths */
     --container-max-width: 1200px;
 }
 
@@ -124,7 +116,6 @@ button, .btn {
     border-radius: var(--border-radius-full);
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -186,7 +177,6 @@ nav ul li a:hover, nav ul li a.active {
     transition: all var(--transition-speed);
 }
 
-/* Home Section */
 .home-section {
     height: 100vh;
     display: flex;
@@ -286,7 +276,6 @@ nav ul li a:hover, nav ul li a.active {
     margin-left: var(--spacing-xs);
 }
 
-/* Timeline (for Experience and Education) */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -356,7 +345,6 @@ nav ul li a:hover, nav ul li a.active {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Enhanced Experience Points Styling */
 .experience-points {
     list-style-type: disc;
     padding-left: var(--spacing-md);
@@ -382,7 +370,6 @@ nav ul li a:hover, nav ul li a.active {
     left: -1rem;
 }
 
-/* Organization Link Styling */
 .org-link {
     font-size: var(--font-size-sm);
     margin-left: 5px;
@@ -394,7 +381,6 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--secondary-color);
 }
 
-/* Alternate Timeline Layout */
 .timeline.alternate {
     position: relative;
     max-width: 1200px;
@@ -487,7 +473,6 @@ nav ul li a:hover, nav ul li a.active {
     border-radius: var(--border-radius-full);
 }
 
-/* Skills Section */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -532,7 +517,6 @@ nav ul li a:hover, nav ul li a.active {
     border-radius: var(--border-radius-full);
 }
 
-/* Talks & Presentations Section */
 .talks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -581,7 +565,6 @@ nav ul li a:hover, nav ul li a.active {
     font-weight: var(--font-weight-medium);
 }
 
-/* Awards & Certificates Section */
 .awards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -635,7 +618,6 @@ nav ul li a:hover, nav ul li a.active {
     align-self: flex-end;
 }
 
-/* Blog Section */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -988,12 +970,10 @@ footer p {
     color: var(--text-light);
 }
 
-/* Utility Classes */
 .text-center {
     text-align: center;
 }
 
-/* Responsive adjustments for timeline */
 @media (max-width: 992px) {
     .timeline.alternate::after {
         left: 30px;
@@ -1013,7 +993,6 @@ footer p {
     }
 }
 
-/* Add this to your style.css file */
 .talk-item {
     background-color: var(--surface-color);
     padding: var(--spacing-md);
@@ -1029,14 +1008,14 @@ footer p {
 .talk-item p {
     color: var(--text-light);
     margin-bottom: var(--spacing-md);
-    flex-grow: 1; /* This will push the link to the bottom */
+    flex-grow: 1; 
 }
 
 .talk-link {
     display: inline-block;
     color: var(--primary-color);
     font-weight: var(--font-weight-medium);
-    margin-top: auto; /* This helps ensure the link stays at the bottom */
+    margin-top: auto; 
 }
 
 .talk-location {
@@ -1045,18 +1024,16 @@ footer p {
     margin-bottom: var(--spacing-sm);
     font-style: italic;
     line-height: 1.2;
-    height: 1.2em; /* Fixed height to ensure alignment */
+    height: 1.2em; 
     display: flex;
     align-items: center;
 }
 
-/* Ensure consistent styling for talk items */
 .talk-item h3, .talk-item h4 {
     margin-bottom: var(--spacing-xs);
     line-height: 1.3;
 }
 
-/* Awards Section - Single Column Layout */
 .awards-grid {
     display: flex;
     flex-direction: column;
@@ -1100,7 +1077,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 0; /* Prevents content from overflowing */
+    min-width: 0; 
 }
 
 .award-content h3 {
@@ -1128,14 +1105,12 @@ footer p {
     margin-top: var(--spacing-xs);
 }
 
-/* Award link styling if using the anchor approach */
 a.award-link {
     text-decoration: none;
     color: inherit;
     display: block;
 }
 
-/* Award external link icon styling if using that approach */
 .award-link-icon {
     position: absolute;
     top: var(--spacing-sm);
@@ -1150,7 +1125,6 @@ a.award-link {
     opacity: 1;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 767px) {
     .award-item {
         flex-direction: column;
@@ -1166,7 +1140,6 @@ a.award-link {
     }
 }
 
-/* Add hover effect to timeline items */
 .timeline-item {
     transition: transform var(--transition-speed);
 }
@@ -1175,7 +1148,6 @@ a.award-link {
     transform: translateY(-5px);
 }
 
-/* Make sure the timeline content has proper z-index to display above the timeline line */
 .timeline-content {
     position: relative;
     z-index: 2;
@@ -1186,7 +1158,6 @@ a.award-link {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Blog Section - Enhanced Styles */
 .blog-card {
     display: flex;
     flex-direction: column;
@@ -1222,7 +1193,7 @@ a.award-link {
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* This makes the content expand to fill available space */
+    flex-grow: 1; 
 }
 
 .blog-date {
@@ -1241,7 +1212,7 @@ a.award-link {
 .blog-content p {
     color: var(--text-light);
     margin-bottom: var(--spacing-md);
-    flex-grow: 1; /* This pushes the read more link to the bottom */
+    flex-grow: 1; 
 }
 
 /* Blog published line */
@@ -1262,7 +1233,7 @@ a.award-link {
     color: var(--primary-color);
     font-weight: var(--font-weight-medium);
     position: relative;
-    margin-top: auto; /* This helps ensure the link stays at the bottom */
+    margin-top: auto; 
 }
 
 .read-more::after {
@@ -1296,13 +1267,13 @@ a.award-link {
 .project-content p {
     color: var(--text-light);
     margin-bottom: var(--spacing-md);
-    flex-grow: 1; /* This makes the paragraph take up available space */
+    flex-grow: 1;
 }
 
 .project-links {
     display: flex;
     gap: var(--spacing-md);
-    margin-top: auto; /* This pushes links to the bottom */
+    margin-top: auto; 
 }
 
 .error-message {
